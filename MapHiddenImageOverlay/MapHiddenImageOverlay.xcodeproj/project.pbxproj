@@ -9,12 +9,14 @@
 /* Begin PBXBuildFile section */
 		1ED4CF151F51226D00E8A151 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF141F51226D00E8A151 /* main.m */; };
 		1ED4CF181F51226D00E8A151 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF171F51226D00E8A151 /* AppDelegate.m */; };
-		1ED4CF1B1F51226D00E8A151 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF1A1F51226D00E8A151 /* ViewController.m */; };
 		1ED4CF1E1F51226D00E8A151 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4CF1C1F51226D00E8A151 /* Main.storyboard */; };
 		1ED4CF201F51226D00E8A151 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4CF1F1F51226D00E8A151 /* Assets.xcassets */; };
 		1ED4CF231F51226D00E8A151 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ED4CF211F51226D00E8A151 /* LaunchScreen.storyboard */; };
 		1ED4CF2E1F51226D00E8A151 /* MapHiddenImageOverlayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF2D1F51226D00E8A151 /* MapHiddenImageOverlayTests.m */; };
 		1ED4CF391F51226D00E8A151 /* MapHiddenImageOverlayUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF381F51226D00E8A151 /* MapHiddenImageOverlayUITests.m */; };
+		1ED4CF4A1F51229600E8A151 /* CustomOverlayRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF471F51229600E8A151 /* CustomOverlayRenderer.m */; };
+		1ED4CF4B1F51229600E8A151 /* CustomOverlay.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF491F51229600E8A151 /* CustomOverlay.m */; };
+		1ED4CF4E1F51229E00E8A151 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1ED4CF4D1F51229E00E8A151 /* ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,8 +41,6 @@
 		1ED4CF141F51226D00E8A151 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1ED4CF161F51226D00E8A151 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1ED4CF171F51226D00E8A151 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1ED4CF191F51226D00E8A151 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		1ED4CF1A1F51226D00E8A151 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		1ED4CF1D1F51226D00E8A151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1ED4CF1F1F51226D00E8A151 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED4CF221F51226D00E8A151 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +51,12 @@
 		1ED4CF341F51226D00E8A151 /* MapHiddenImageOverlayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MapHiddenImageOverlayUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED4CF381F51226D00E8A151 /* MapHiddenImageOverlayUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapHiddenImageOverlayUITests.m; sourceTree = "<group>"; };
 		1ED4CF3A1F51226D00E8A151 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED4CF461F51229600E8A151 /* CustomOverlayRenderer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlayRenderer.h; sourceTree = "<group>"; };
+		1ED4CF471F51229600E8A151 /* CustomOverlayRenderer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlayRenderer.m; sourceTree = "<group>"; };
+		1ED4CF481F51229600E8A151 /* CustomOverlay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CustomOverlay.h; sourceTree = "<group>"; };
+		1ED4CF491F51229600E8A151 /* CustomOverlay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomOverlay.m; sourceTree = "<group>"; };
+		1ED4CF4C1F51229E00E8A151 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1ED4CF4D1F51229E00E8A151 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,10 +107,14 @@
 		1ED4CF121F51226D00E8A151 /* MapHiddenImageOverlay */ = {
 			isa = PBXGroup;
 			children = (
+				1ED4CF461F51229600E8A151 /* CustomOverlayRenderer.h */,
+				1ED4CF471F51229600E8A151 /* CustomOverlayRenderer.m */,
+				1ED4CF481F51229600E8A151 /* CustomOverlay.h */,
+				1ED4CF491F51229600E8A151 /* CustomOverlay.m */,
 				1ED4CF161F51226D00E8A151 /* AppDelegate.h */,
 				1ED4CF171F51226D00E8A151 /* AppDelegate.m */,
-				1ED4CF191F51226D00E8A151 /* ViewController.h */,
-				1ED4CF1A1F51226D00E8A151 /* ViewController.m */,
+				1ED4CF4C1F51229E00E8A151 /* ViewController.h */,
+				1ED4CF4D1F51229E00E8A151 /* ViewController.m */,
 				1ED4CF1C1F51226D00E8A151 /* Main.storyboard */,
 				1ED4CF1F1F51226D00E8A151 /* Assets.xcassets */,
 				1ED4CF211F51226D00E8A151 /* LaunchScreen.storyboard */,
@@ -273,9 +283,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ED4CF1B1F51226D00E8A151 /* ViewController.m in Sources */,
 				1ED4CF181F51226D00E8A151 /* AppDelegate.m in Sources */,
 				1ED4CF151F51226D00E8A151 /* main.m in Sources */,
+				1ED4CF4A1F51229600E8A151 /* CustomOverlayRenderer.m in Sources */,
+				1ED4CF4B1F51229600E8A151 /* CustomOverlay.m in Sources */,
+				1ED4CF4E1F51229E00E8A151 /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
